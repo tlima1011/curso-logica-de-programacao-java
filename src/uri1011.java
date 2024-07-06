@@ -1,18 +1,21 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class uri1011 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in); 
+		Locale.setDefault(Locale.US); 
+		Scanner ler = new Scanner(System.in); 
 		
-		int a = sc.nextInt(); 
-		int b = sc.nextInt(); 
+		double pi = 3.14159;
+		double r = ler.nextDouble(); 
 		
-		int x = a + b; 
-		System.out.println("X = " + x);
+		double v = (4/3.0) * pi * Math.pow(r,3); 
 		
-		sc.close();
+		System.out.printf("VOLUME = %.3f%n", v);
+		
+		ler.close();
 
 	}
 }
