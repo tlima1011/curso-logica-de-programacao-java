@@ -14,7 +14,6 @@ public class uri1019 {
 		segundo = resto % 60; 
 		System.out.println(hora + ":" + minuto + ":" + segundo);
 		
-		
 		sc.close();
 	}
 
