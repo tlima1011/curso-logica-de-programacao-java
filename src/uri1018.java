@@ -8,7 +8,7 @@ public class uri1018 {
 		Locale.setDefault(Locale.US); 
 		Scanner sc = new Scanner(System.in); 
 		
-int N, quociente, resto, nota;
+		int N, quociente, resto, nota;
 		
 		N = sc.nextInt();
 		System.out.println(N);
