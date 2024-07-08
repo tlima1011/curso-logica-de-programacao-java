@@ -48,7 +48,7 @@ public class uri1045 {
 		}
 		
 		if(a >= b + c) { 
-			System.out.println("NAO FORMA UM TRIANGULO");
+			System.out.println("NAO FORMA TRIANGULO");
 		}
 		else {
 			if(Math.pow(a, 2.0) == Math.pow(b, 2.0) + Math.pow(c, 2.0)) { 
@@ -67,7 +67,6 @@ public class uri1045 {
 				System.out.println("TRIANGULO ISOSCELES");
 			}
 		}
-		
 		sc.close();
 	}
 }
