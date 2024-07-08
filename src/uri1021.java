@@ -14,8 +14,7 @@ public class uri1021 {
 		N = sc.nextInt();
 		System.out.println(N);
 
-		
-		
+			
 		
 		
 		
