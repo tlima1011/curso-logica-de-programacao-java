@@ -7,7 +7,8 @@ public class uri1045 {
 		
 		Locale.setDefault(Locale.US); 
 		Scanner sc = new Scanner(System.in); 
-
+		
+		String res = ""; 
 		double a = 0, b = 0, c = 0;
 		
 		double n1 = sc.nextDouble(); 
@@ -50,13 +51,23 @@ public class uri1045 {
 			System.out.println("NAO FORMA UM TRIANGULO");
 		}
 		else {
-			
-			
-			
+			if(Math.pow(a, 2.0) == Math.pow(b, 2.0) + Math.pow(c, 2.0)) { 
+				System.out.println("TRIANGULO RETANGULO");
+			}
+			else if( Math.pow(a, 2.0) > Math.pow(b, 2.0) + Math.pow(c, 2.0)) { 
+				System.out.println("TRIANGULO OBTUSANGULO");
+			}
+			else if( Math.pow(a, 2.0) < Math.pow(b, 2.0) + Math.pow(c, 2.0)) { 
+				System.out.println("TRIANGULO ACUTANGULO");
+			}
+			if(a == b && b == c) { 
+				System.out.println("TRIANGULO EQUILATERO");
+			}
+			else if(a == b || b == c || a == c) { 
+				System.out.println("TRIANGULO ISOSCELES");
+			}
 		}
-		System.out.printf("%.1f, %.1f, %.1f%n",a,b,c);
 		
 		sc.close();
 	}
-
 }
