@@ -35,7 +35,7 @@ public class uri1049 {
 					resultado = "pulga";
 				}
 				else if(s3.equalsIgnoreCase("herbivoro")) {
-					resultado = "herbivoro";
+					resultado = "lagarta";
 				}
 			}
 			else if(s2.equalsIgnoreCase("anelideo") ){
