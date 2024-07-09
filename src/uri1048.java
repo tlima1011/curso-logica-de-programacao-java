@@ -10,7 +10,6 @@ public class uri1048 {
 		
 		double porcentagem = 0.0, reajuste = 0.0; 
 		double salario = sc.nextDouble(); 
-		String p = "%"; 
 		
 		if(salario >= 0 && salario <= 400) { 
 			porcentagem = 0.15;
@@ -32,7 +31,7 @@ public class uri1048 {
 		
 		System.out.printf("Novo salario: %.2f%n", novoSalario); 
 		System.out.printf("Reajuste ganho: %.2f%n", reajuste); 
-		System.out.printf("Em percentual: %.0f %s%n", ( porcentagem * 100),p);
+		System.out.printf("Em percentual: %.0f %%%n", ( porcentagem * 100));
 		
 		sc.close();
 	}
