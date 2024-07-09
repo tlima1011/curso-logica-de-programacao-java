@@ -18,6 +18,9 @@ public class uri1049 {
 				else if (s3.equalsIgnoreCase("onivoro")){
 					resultado = "pomba";
 				}
+				else { 
+					System.out.println("Invalido");
+				}
 			}
 			else if(s2.equalsIgnoreCase("mamifero")) {
 				if(s3.equalsIgnoreCase("onivoro")) {
@@ -26,7 +29,9 @@ public class uri1049 {
 				else if(s3.equalsIgnoreCase("herbivoro")){
 					resultado = "vaca";
 				}
-				
+				else { 
+					System.out.println("Invalido");
+				}
 			}
 		}
 		else if(s1.equalsIgnoreCase("invertebrado")){ 
@@ -37,6 +42,9 @@ public class uri1049 {
 				else if(s3.equalsIgnoreCase("herbivoro")) {
 					resultado = "lagarta";
 				}
+				else { 
+					System.out.println("Invalido");
+				}
 			}
 			else if(s2.equalsIgnoreCase("anelideo") ){
 				if(s3.equalsIgnoreCase("hematofago")) {
@@ -44,6 +52,9 @@ public class uri1049 {
 				}
 				else if(s3.equalsIgnoreCase("onivoro")) {
 					resultado = "minhoca"; 
+				}
+				else { 
+					System.out.println("Invalido");
 				}
 			}
 		}
@@ -53,5 +64,4 @@ public class uri1049 {
 		System.out.println(resultado);
 		sc.close();
 	}
-
 }
