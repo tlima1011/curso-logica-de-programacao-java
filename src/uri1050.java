@@ -6,6 +6,7 @@ public class uri1050 {
 		
 		Scanner sc = new Scanner(System.in); 
 		String cidade = ""; 
+		
 		int ddd = sc.nextInt(); 
 		
 		switch(ddd) { 
@@ -35,12 +36,8 @@ public class uri1050 {
 				break; 
 			default: 
 				cidade = "DDD nao cadastrado"; 
-		}
-		
+		}	
 		System.out.println(cidade);
-		
 		sc.close();
-
 	}
-
 }
