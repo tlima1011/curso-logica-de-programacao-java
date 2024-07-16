@@ -7,7 +7,7 @@ public class uri1159 {
 		
 		while(i <= 100) { 
 			System.out.print(i % 2 == 0? i + "\n" : "");
-			i = i + 1;
+			i++;
 		}
 	}
 }
