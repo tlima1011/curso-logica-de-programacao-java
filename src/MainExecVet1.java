@@ -9,16 +9,14 @@ public class MainExecVet1 {
 		Scanner sc = new Scanner(System.in); 
 		
 		int n = sc.nextInt(); 
-		double nums[] = new double[n]; 
-		int indiceMaior = 0; 
-		double numeroMaior = 0.0; 
+		double nums[] = new double[n];  
 				
 		for(int i = 0; i < n;i++) { 
 			nums[i] = sc.nextDouble();
 		}
 		
-		numeroMaior = nums[0];
-		indiceMaior = 0;
+		double numeroMaior = nums[0];
+		int indiceMaior = 0;
 		
 		for(int i = 0; i < nums.length; i++) { 
 			if(nums[i] > numeroMaior) {
