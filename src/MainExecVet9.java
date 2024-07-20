@@ -15,6 +15,8 @@ public class MainExecVet9 {
 		double totalCompra = 0.0; 
 		double totalVenda = 0.0; 
 		double lucroTotal = 0.0; 
+		double lucro = 0.0; 
+		double porcentagemLucro = 0.0; 
 		int abaixo10Porcento = 0; 
 		int entre10e20Porcento = 0; 
 		int acima20 = 0; 
@@ -34,14 +36,28 @@ public class MainExecVet9 {
 			lucroTotal = totalVenda - totalCompra; 			
 		}
 		
+		for(int i = 0; i < n;i++) { 
+			
+			lucro = precoVenda[i] - precoCompra[i]; 
+			porcentagemLucro = (lucro / precoCompra[i]) * 100; 
+			
+			if(porcentagemLucro < 10.0) { 
+				abaixo10Porcento = abaixo10Porcento + 1; 
+			}
+			else if(porcentagemLucro <= 20.0) { 
+				entre10e20Porcento = entre10e20Porcento  + 1; 
+			}
+			else {
+				acima20 = acima20 + 1; 
+			}
+		}
 		
-		
+		System.out.println("Lucro abaixo de 10%: " + abaixo10Porcento);
+		System.out.println("Lucro entre 10% e 20%: " + entre10e20Porcento);
+		System.out.println("Lucro acima de 20%: " + acima20);
 		System.out.printf("Valor total de compra: %.2f%n", totalCompra);
 		System.out.printf("Valor total de venda: %.2f%n", totalVenda);
-		System.out.printf("Lucro Total: %.2f", lucroTotal);
-			
+		System.out.printf("Lucro Total: %.2f%n", lucroTotal);		
 		sc.close();
-
 	}
-
 }
