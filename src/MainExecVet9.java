@@ -12,14 +12,8 @@ public class MainExecVet9 {
 		String produto[] = new String[n]; 
 		double precoCompra[] = new double[n]; 
 		double precoVenda[] = new double[n]; 
-		double totalCompra = 0.0; 
-		double totalVenda = 0.0; 
-		double lucroTotal = 0.0; 
-		double lucro = 0.0; 
-		double porcentagemLucro = 0.0; 
-		int abaixo10Porcento = 0; 
-		int entre10e20Porcento = 0; 
-		int acima20 = 0; 
+		double totalCompra = 0.0, totalVenda = 0.0,lucroTotal = 0.0, lucro = 0.0, porcentagemLucro = 0.0; 
+		int abaixo10Porcento = 0, entre10e20Porcento = 0, acima20 = 0; 
 		
 		for(int i = 0; i < n;i++) { 
 			produto[i] = sc.next(); 
@@ -37,7 +31,6 @@ public class MainExecVet9 {
 		}
 		
 		for(int i = 0; i < n;i++) { 
-			
 			lucro = precoVenda[i] - precoCompra[i]; 
 			porcentagemLucro = (lucro / precoCompra[i]) * 100; 
 			
