@@ -26,8 +26,16 @@ public class MainExecVet8 {
 		}
 		double menorAltura = altura[0]; 
 		double maiorAltura = altura[0]; 
-				
 		
+		for(int i = 0; i < n;i++) { 
+			if(altura[i] > maiorAltura) { 
+				maiorAltura = altura[i];
+			}
+			if(altura[i] < menorAltura) { 
+				menorAltura = altura[i];
+			}
+		}
+				
 		for(int i = 0; i < n; i++) { 
 			if(sexo[i].equals('M')) {
 				homens = homens + 1;
@@ -40,6 +48,8 @@ public class MainExecVet8 {
 		
 		mediaMulheres = somaMulheres / (double) mulheres;
 		
+		System.out.printf("Menor altura = %.2f%n", menorAltura); 
+		System.out.printf("Maior altura = %.2f%n", maiorAltura);
 		System.out.printf("Media das alturas das mulheres = %.2f%n", mediaMulheres);
 		System.out.printf("Numero de homens = %d%n", homens);
 		sc.close();
