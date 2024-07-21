@@ -18,13 +18,12 @@ public class MatrizExercicioResolvido1 {
 				}
 			}
 		}
+		
 		System.out.println("DIAGONAL PRINCIPAL: ");
 		for(int i = 0; i < n;i++) { 
 			System.out.printf("%d ", mat[i][i]);
 		}
-		
 		System.out.println("\nQUANTIDADE DE NEGATIVOS = "+ negativos);
-		
 		sc.close();	
 	}
 }
