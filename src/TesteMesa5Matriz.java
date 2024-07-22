@@ -1,19 +1,18 @@
 
-public class TesteMesa3 {
+public class TesteMesa5Matriz {
 
 	public static void main(String[] args) {
 
-		int n = 3;
+		int n = 3, x = 0;
 		int mat[][] = new int[n][n];
-		int vet[] = new int[n];
+		int v[] = new int[n];
 
 		for (int i = 0; i < n; i++) {
-			int x = 0;
 			for (int j = 0; j < n; j++) {
 				mat[i][j] = i + j;
-				x = x + mat[i][j];
+				x += mat[i][j];
 			}
-			vet[i] = x;
+			v[i] = x;
 		}
 
 		for (int i = 0; i < n; i++) {
@@ -22,10 +21,9 @@ public class TesteMesa3 {
 			}
 			System.out.println();
 		}
-		
-		System.out.println();
-		for (int v : vet) {
-			System.out.print(v + " ");
+
+		for (int i = 0; i < n; i++) {
+			System.out.print(v[i] + " ");
 		}
 	}
 }

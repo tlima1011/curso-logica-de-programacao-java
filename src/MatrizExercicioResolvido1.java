@@ -20,10 +20,23 @@ public class MatrizExercicioResolvido1 {
 		}
 		
 		System.out.println("DIAGONAL PRINCIPAL: ");
-		for(int i = 0; i < n;i++) { 
-			System.out.printf("%d ", mat[i][i]);
+//		for(int i = 0; i < n;i++) { 
+//			System.out.printf("%d ", mat[i][i]);
+//		}
+//		System.out.print("\n\n");
+		for(int i = 0; i < n; i ++) { 
+			for(int j = 0; j < n;j++) { 
+				if(i == j) { 
+					System.out.printf("%d ", mat[i][i]);
+				}
+				else { 
+					System.out.printf("  ");
+				}
+			}
+			System.out.println();
 		}
-		System.out.println("\nQUANTIDADE DE NEGATIVOS = "+ negativos);
+		
+		System.out.println("QUANTIDADE DE NEGATIVOS = "+ negativos);
 		sc.close();	
 	}
 }
