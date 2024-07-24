@@ -43,14 +43,14 @@ public class MatrizesMain {
 					mostraLinha(mat, n);
 					break;
 				case 4: 
-					//mostrarColuna(mat, n);
+					mostraColuna(mat, n);
 					break;
 				case 5: 
 					//mostrarIdentidade(mat, n);
 					break;
 					
 			}
-		}while(op != 5);
+		}while(op != 6);
 		sc.close();
 	}
 
@@ -75,11 +75,25 @@ public class MatrizesMain {
 	
 	private static void mostraLinha(int[][] mat, int n) {
 		int l = sc.nextInt(); 
-		for(int i = l ; i < n;i++) {
+		for(int i = 0 ; i < n;i++) {
 			for(int j = 0; j < n; j++) { 
-				System.out.print(mat[l][j] + "\n");
+				if(i == l) { 
+					System.out.print(mat[i][j] + " ");
+				}	
 			}
 		}
-		
+		System.out.println();
+	}
+	
+	private static void mostraColuna(int[][] mat, int n) {
+		int c = sc.nextInt(); 
+		for(int i = 0 ; i < n;i++) {
+			for(int j = 0; j < n; j++) { 
+				if(j == c) { 
+					System.out.println(mat[i][c]);
+				}
+			}
+		}
+		//System.out.println();
 	}
 }
