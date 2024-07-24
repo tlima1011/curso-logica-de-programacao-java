@@ -46,7 +46,7 @@ public class MatrizesMain {
 					mostraColuna(mat, n);
 					break;
 				case 5: 
-					//mostrarIdentidade(mat, n);
+					mostrarIdentidade(mat, n);
 					break;
 					
 			}
@@ -64,13 +64,11 @@ public class MatrizesMain {
 	}
 	
 	private static void diagonalSecundaria(int[][] mat, int n) {
-		for(int i = 0; i < n;i++) { 
-			for(int j = 0; j < n;j++) { 
-				System.out.println(mat[i][n - i - 1]);
-				//System.out.print(i == j ? mat[i][j] : "  ");
-			}
-			System.out.println();
-		}
+		for (int i = 0; i < n; i++) {
+            // Acessa o elemento da diagonal secundária na posição (i, n - 1 - i)
+            int elemento = mat[i][n - 1 - i];
+            System.out.print(elemento + " ");
+        }
 	}
 	
 	private static void mostraLinha(int[][] mat, int n) {
@@ -95,5 +93,14 @@ public class MatrizesMain {
 			}
 		}
 		//System.out.println();
+	}
+	
+	private static void mostrarIdentidade(int[][] mat, int n) {
+		for(int i = 0; i < n;i++) { 
+			for(int j = 0; j < n;j++) { 
+				System.out.print(i == j ? 1 + " " : 0 + " ");
+			}
+			System.out.println();
+		}
 	}
 }
